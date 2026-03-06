@@ -1,0 +1,5 @@
+@base = http://localhost:3000/api/v1
+@id = REPLACE_WITH_REAL_ID
+
+### Delete Item
+DELETE {{base}}/items/{{id}}

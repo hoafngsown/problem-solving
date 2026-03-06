@@ -1,0 +1,11 @@
+@base = http://localhost:3000/api/v1
+@id = REPLACE_WITH_REAL_ID
+
+### Update Item
+PUT {{base}}/items/{{id}}
+Content-Type: application/json
+
+{
+  "name": "Bitcoin Widget Pro",
+  "price": 79.99
+}

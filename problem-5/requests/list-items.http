@@ -1,0 +1,19 @@
+@base = http://localhost:3000/api/v1
+
+### List All Items
+GET {{base}}/items
+
+### List with Pagination
+GET {{base}}/items?page=1&limit=2
+
+### Filter by Name
+GET {{base}}/items?name=bitcoin
+
+### Filter by Status
+GET {{base}}/items?status=active
+
+### Filter by Price Range
+GET {{base}}/items?minPrice=20&maxPrice=50
+
+### Sort by Price ASC
+GET {{base}}/items?sort=price&order=ASC

@@ -1,0 +1,41 @@
+@base = http://localhost:3000/api/v1
+
+### Quick Test (direct URL)
+POST http://localhost:3000/api/v1/items
+Content-Type: application/json
+
+{
+  "name": "Quick Test",
+  "price": 5.00
+}
+
+### Create Item
+POST {{base}}/items
+Content-Type: application/json
+
+{
+  "name": "Bitcoin Widget",
+  "description": "A crypto trading widget",
+  "price": 49.99,
+  "status": "active"
+}
+
+### Create Another Item
+POST {{base}}/items
+Content-Type: application/json
+
+{
+  "name": "Ethereum Dashboard",
+  "description": "Real-time ETH monitoring",
+  "price": 29.99
+}
+
+### Create Inactive Item
+POST {{base}}/items
+Content-Type: application/json
+
+{
+  "name": "Legacy Tool",
+  "price": 9.99,
+  "status": "inactive"
+}

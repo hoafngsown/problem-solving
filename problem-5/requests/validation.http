@@ -1,0 +1,28 @@
+@base = http://localhost:3000/api/v1
+
+### Missing Required Fields
+POST {{base}}/items
+Content-Type: application/json
+
+{
+  "description": "no name or price"
+}
+
+### Invalid Price
+POST {{base}}/items
+Content-Type: application/json
+
+{
+  "name": "Bad Item",
+  "price": -10
+}
+
+### Invalid Status
+POST {{base}}/items
+Content-Type: application/json
+
+{
+  "name": "Bad Status",
+  "price": 10,
+  "status": "unknown"
+}
